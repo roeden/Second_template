@@ -28,9 +28,9 @@
     gap: 8rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 400;
-    font-size: 20px;
-    color: #ffffff;
+    font-weight: 500;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
 }
 .banner{
     background-size: cover;
@@ -66,7 +66,7 @@
  .hero-title .country{
     font-size: 85px;
     letter-spacing: 3px;
-    color: gold; /* Set text color to white */
+    color: rgb(255, 238, 1); /* Set text color to white */
  }
 
  .hero-title .details{
@@ -89,6 +89,16 @@
     letter-spacing: 1.5px;
     cursor: pointer;/*to identify the this element is a button*/
  }
+ .hero-title .explore button:hover {
+    background: rgba(255, 255, 255, 0.5); /* Change the background color on hover */
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5); /* Change the box-shadow on hover */
+
+}
+ .location-text {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
  .store-list{
     bottom: 25px;
     position: absolute;
