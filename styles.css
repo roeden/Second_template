@@ -49,7 +49,7 @@
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
  }
  .hero-title{
     max-width: 1200px;
@@ -78,8 +78,8 @@
     padding-bottom:1.5rem ;
  }
  .hero-title .explore button{
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba(250, 249, 249, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(44, 43, 43, 0.973);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 50px;
@@ -88,6 +88,7 @@
     padding: 12px 50px;
     letter-spacing: 1.5px;
     cursor: pointer;/*to identify the this element is a button*/
+    transition: 1s;
  }
  .hero-title .explore button:hover {
     background: rgba(255, 255, 255, 0.5); /* Change the background color on hover */
