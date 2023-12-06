@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+        <title>Second_Template</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                <div class="logo"> <img src="./assets/img/sengda.png" alt="" data-aos="fade-right" data-aos-delay="500"data-aos-duration="700"></div>
+                    <ul data-aos="fade-down" data-aos-duration="800">
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="banner" style="background-image: url('./assets/img/front.jpg')">
+                <div class="glass-wrapper" data-aos="fade-right" data-aos-delay="500"data-aos-duration="700"></div>
+            </div>
+            <div class="hero-title">
+                <p data-aos="fade-left" data-aos-delay="500"data-aos-duration="700">SHOP NOW</p>
+                <p class="country" data-aos="fade-left" data-aos-delay="600"data-aos-duration="700">SENG DA TRADING LTD.</p>
+                <div class="details" data-aos="fade-left" data-aos-delay="700"data-aos-duration="700">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. In deserunt quia voluptatem quaerat! Maiores numquam sapiente deserunt dolores nihil nemo, quod pariatur consequuntur amet illum impedit, saepe dicta voluptatem veritatis.
+                </div>
+                <div class="explore"data-aos="fade-left" data-aos-delay="700"data-aos-duration="700">
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="store-list">
+                <ul class="department">
+                <li class="active"
+                    data-img ="./assets/img/front.jpg" data-aos="fade-up" data-aos-delay="700"data-aos-duration="700">
+                    <div class="thumbnail" style="background: url('./assets/img/front.jpg')">
+                        <div class="details">
+                            <p class="location">Supermarket</p>
+                            <p class="place-name">Goroka</p>
+                        </div>
+                    </div>
+                </li>
+                <li data-img="./assets/img/dept-store.jpeg"  data-aos="fade-up" data-aos-delay="700"data-aos-duration="700"> 
+                    <div class="thumbnail" style="background: url('./assets/img/dept-store.jpeg')">
+                        <div class="details">
+                            <p class="location">Dept Store</p>
+                            <p class="place-name">Goroka</p>
+                        </div>
+                    </div>
+                </li>
+                <li data-img="./assets/img/hardware.jpeg" data-aos="fade-up" data-aos-delay="700"data-aos-duration="700">
+                    <div class="thumbnail" style="background: url('./assets/img/hardware.jpeg')">
+                        <div class="details">
+                            <p class="location">Hardware</p>
+                            <p class="place-name">Goroka</p>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+            </div>
+        <div>
+    </body>
+
+    <style></style>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        let places = document.querySelectorAll('.store-list li')
+        let active = "/assets/img/front.jpg";
+
+        places.forEach((e) => {
+            e.addEventListener("mouseenter",(event) =>{
+                places.forEach((e) =>{
+                    e.classList.remove("active");
+                });
+                event.target.classList.add("active");
+                active = event.target.getAttribute('data-img')
+                let banner = document.querySelector('.banner')
+                banner.style.backgroundImage = `url('${active}')`
+            });
+        });
+    </script>
+
+</html>

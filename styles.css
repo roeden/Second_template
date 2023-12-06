@@ -1,0 +1,139 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+    font-family: "Poppins", sans-serif ;
+}
+.header{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0px auto;
+    align-items: center;
+}
+.header .logo {
+    display: flex;
+    width: 30%; /* or set a specific width */
+    height:35%; /* or set a specific height */
+}
+
+.header .logo img {
+    max-width: 60%;
+    height: auto;
+}
+
+.header ul{
+    display: flex;
+    list-style:none;
+    gap: 8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+}
+.banner{
+    background-size: cover;
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top: 0px; /*to make cover all including header */
+    z-index: -1; /*to make the background underlying */
+    transition: 2s ease;
+ }
+ .banner .glass-wrapper{
+    width: 30%;
+    height: 100%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+ }
+ .hero-title{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 13rem;
+ }
+ .hero-title p{
+    font-size: 47px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+ }
+ .hero-title .country{
+    font-size: 85px;
+    letter-spacing: 3px;
+    color: gold; /* Set text color to white */
+ }
+
+ .hero-title .details{
+    width: 60%;
+    padding-top: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    padding-bottom:1.5rem ;
+ }
+ .hero-title .explore button{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    padding: 12px 50px;
+    letter-spacing: 1.5px;
+    cursor: pointer;/*to identify the this element is a button*/
+ }
+ .store-list{
+    bottom: 25px;
+    position: absolute;
+    left: 40rem;
+}
+.store-list p{
+    color: #ffffff;
+    padding-left: 20px;
+    margin-bottom:auto;
+    line-height: 24px;
+}
+.store-list ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    width: 65vw;
+    height: 15rem;
+    align-items: center;
+}
+.store-list .thumbnail{
+    display: flex;
+    height: 10rem;
+    width: 18rem;
+    background-size:cover !important ;
+    border-radius: 8px;
+    flex-direction: column;
+}
+.store-list .thumbnail .details{
+    margin-top: auto;
+    padding: 5px 0px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;  
+}
+.details .place-name{
+    font-size: 24px;
+    font-weight:600;
+
+}
+.details .location{
+    font-weight: 300;
+}
+.store-list .active{
+    margin-top: -5rem;
+}
+ 
