@@ -16,11 +16,17 @@
     width: 30%; /* or set a specific width */
     height:35%; /* or set a specific height */
 }
+.header .logo :hover {
+    transform: scale(0.75);
+    cursor: pointer;
+    transition: 2s ease;
+}
 
 .header .logo img {
     max-width: 60%;
     height: auto;
 }
+
 
 .header ul{
     display: flex;
@@ -28,9 +34,14 @@
     gap: 8rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 500;
-    font-size: 25px;
+    font-weight: 600;
+    font-size: 20px;
     color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.header ul :hover{
+    transform: scale(0.75);
+    transition: 2s ease;
 }
 .banner{
     background-size: cover;
@@ -89,11 +100,12 @@
     letter-spacing: 1.5px;
     cursor: pointer;/*to identify the this element is a button*/
     transition: 1s;
+
  }
  .hero-title .explore button:hover {
     background: rgba(255, 255, 255, 0.5); /* Change the background color on hover */
     box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5); /* Change the box-shadow on hover */
-
+    transform: translate(5px, 12px);
 }
  .location-text {
     color: rgb(255, 255, 255);
@@ -147,4 +159,6 @@
 .store-list .active{
     margin-top: -5rem;
 }
+
+
  
