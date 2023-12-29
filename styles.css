@@ -29,6 +29,7 @@
     max-width: 60%;
     height: auto;
 }
+/* Add this CSS to your existing styles or in a separate styles.css file */
 
 .header ul {
     display: flex;
@@ -42,9 +43,26 @@
     cursor: pointer;
 }
 
-.header ul:hover {
-    transform: scale(0.75);
-    transition: 2s ease;
+.header ul li {
+    position: relative;
+}
+
+.header ul li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust the underline thickness as needed */
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); /* Initial scale to make it invisible */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.header ul li:hover::before {
+    transform: scaleX(1); /* Expand the underline on hover */
+    transform-origin: bottom left;
 }
 
 .banner {
@@ -147,6 +165,7 @@
     width: 65vw;
     height: 15rem;
     align-items: center;
+ 
 }
 
 .store-list .thumbnail {
@@ -154,8 +173,8 @@
     height: 10rem;
     width: 18rem;
     background-size: cover !important;
-    border-radius: 8px;
     flex-direction: column;
+    
 }
 
 .store-list .thumbnail .details {
