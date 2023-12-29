@@ -1,22 +1,25 @@
-*{
-    margin: 0px ;
-    padding: 0px;
-    font-family: "Poppins", sans-serif ;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
 }
-.header{
+
+.header {
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
-    margin: 0px auto;
+    margin: 0 auto;
     align-items: center;
 }
+
 .header .logo {
     display: flex;
-    width: 30%; /* or set a specific width */
-    height:35%; /* or set a specific height */
+    width: 30%;
+    height: 35%;
 }
-.header .logo :hover {
+
+.header .logo:hover {
     transform: scale(0.75);
     cursor: pointer;
     transition: 2s ease;
@@ -27,10 +30,9 @@
     height: auto;
 }
 
-
-.header ul{
+.header ul {
     display: flex;
-    list-style:none;
+    list-style: none;
     gap: 8rem;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -39,91 +41,106 @@
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
-.header ul :hover{
+
+.header ul:hover {
     transform: scale(0.75);
     transition: 2s ease;
 }
-.banner{
-    background-size: cover;
-    height: 100%;
-    width:100%;
+
+.banner {
     position: absolute;
-    top: 0px; /*to make cover all including header */
-    z-index: -1; /*to make the background underlying */
-    transition: 2s ease;
- }
- .banner .glass-wrapper{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('./assets/img/front.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: background-image 2s ease;
+}
+
+.banner .glass-wrapper {
     width: 30%;
     height: 100%;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
- }
- .hero-title{
+}
+
+.hero-title {
     max-width: 1200px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-top: 13rem;
- }
- .hero-title p{
+}
+
+.hero-title p {
     font-size: 47px;
     font-weight: 800;
     text-transform: uppercase;
     line-height: 60px;
     color: rgb(255, 255, 255);
- }
- .hero-title .country{
+}
+
+.hero-title .country {
     font-size: 85px;
     letter-spacing: 3px;
-    color: rgb(255, 238, 1); /* Set text color to white */
- }
+    color: rgb(255, 238, 1);
+}
 
- .hero-title .details{
+.hero-title .details {
     width: 60%;
     padding-top: 1.5rem;
     color: #fff;
     font-weight: 400;
     letter-spacing: 1.5px;
-    padding-bottom:1.5rem ;
- }
- .hero-title .explore button{
-    background: rgba(250, 249, 249, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(44, 43, 43, 0.973);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    padding-bottom: 1.5rem;
+}
+
+.hero-title .explore button {
+    background: rgba(212, 210, 210, 0.8);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border-radius: 50px;
     border: none;
     color: #fff;
     padding: 12px 50px;
     letter-spacing: 1.5px;
-    cursor: pointer;/*to identify the this element is a button*/
+    cursor: pointer;
     transition: 1s;
+}
 
- }
- .hero-title .explore button:hover {
-    background: rgba(255, 255, 255, 0.5); /* Change the background color on hover */
-    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5); /* Change the box-shadow on hover */
+.hero-title .explore button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
     transform: translate(5px, 12px);
 }
- .location-text {
+
+.location-text {
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
     font-weight: 500;
 }
- .store-list{
+
+.store-list {
     bottom: 25px;
     position: absolute;
     left: 40rem;
 }
-.store-list p{
+
+.store-list p {
     color: #ffffff;
     padding-left: 20px;
-    margin-bottom:auto;
+    margin-bottom: auto;
     line-height: 24px;
 }
-.store-list ul{
+
+.store-list ul {
     display: flex;
     gap: 20px;
     list-style: none;
@@ -131,34 +148,73 @@
     height: 15rem;
     align-items: center;
 }
-.store-list .thumbnail{
+
+.store-list .thumbnail {
     display: flex;
     height: 10rem;
     width: 18rem;
-    background-size:cover !important ;
+    background-size: cover !important;
     border-radius: 8px;
     flex-direction: column;
 }
-.store-list .thumbnail .details{
+
+.store-list .thumbnail .details {
     margin-top: auto;
     padding: 5px 0px;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;  
 }
-.details .place-name{
-    font-size: 24px;
-    font-weight:600;
 
+.details .place-name {
+    font-size: 24px;
+    font-weight: 600;
 }
-.details .location{
+
+.details .location {
     font-weight: 300;
 }
-.store-list .active{
+
+.store-list .active {
     margin-top: -5rem;
 }
 
+.dark-overlay {
+    position: relative;
+}
 
- 
+.dark-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.dark-overlay .details {
+    z-index: 2;
+}
+
+#banner.dark-overlay-active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    transition: opacity 2s ease;
+}
+
+#banner.dark-overlay-active::before {
+    background-size: cover;
+}
+
+#banner.dark-overlay-active .glass-wrapper {
+    z-index: 2;
+}
+
+#banner.dark-overlay-active.front-overlay::before {
+    background: rgba(0, 0, 0, 0.6);
+}
